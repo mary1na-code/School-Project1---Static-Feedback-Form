@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+
+    <!-- This is the style -->
+    <style>
+        p{
+            color:rgb(116, 113, 116);
+    
+        }
+        
+        form{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            justify-content: center;
+            width:550px;
+            height:auto;
+            background-color:#4D4566;
+            padding-inline:20px;
+            padding-block:20px;
+            margin:auto;
+        }
+
+        .inputs{
+            display:flex;
+            flex-direction: column;
+            align-items: start;
+            gap:10px;
+            width:auto;
+        }
+
+        .inputs input{
+            width:300px;
+            height:30px;
+            border-radius:10px;
+            padding-inline:10px;
+            border:none;
+        }
+
+        form input{
+            width:300px;
+            height:auto;
+            border-radius:10px;
+            padding-inline:10px;
+            border:none;
+        }
+
+        text-area{
+            border:none;
+            width:300px;               
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <P>Please Leave a Feedback</P>
+
+        <div class="inputs">
+            <input type="text" placeholder="Enter Your Name" required>
+            <input type="text" placeholder="Enter Your Email" required>
+        </div>
+
+        <textarea name="Feedback" id="feedback" rows="6" placeholder="Enter your feedback..." required ></textarea>
+        <button>Submit</button>
+        
+    </form>
+</body>
+</html>
