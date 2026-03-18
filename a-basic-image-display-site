@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+
+    <style>
+        *{
+            box-sizing:border-box;
+            
+        }
+
+        body{
+            background: linear-gradient(to bottom, rgba(255, 94, 0, 0.226), rgb(255, 94, 0));
+        }
+
+        main{
+            width: 90%;
+            margin: 42px auto;
+            display: flex;
+            gap: 12px;
+        }
+        
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin: 10px;
+        }
+
+        section{
+            display: flex;
+            flex-direction:column;
+            align-items:center;
+            width: 1fr;
+            height: auto;  
+            overflow: hidden;
+            padding: 20px;
+            border: 1px solid rgb(255, 94, 0);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <img src="https://i.pinimg.com/736x/4f/26/f0/4f26f02c876c52e4756c0bacf84a9533.jpg" alt="an image of a girl">
+            <caption>Anastesia</caption>
+        </section>
+        <section>
+            <img src="https://i.pinimg.com/originals/9e/ee/7e/9eee7e06d512ed6b00d0c32c354aaee3.jpg" alt="an image of a female model">
+            <caption>Herietta</caption>
+        </section>
+        <section>
+            <img src="https://i.pinimg.com/originals/42/7e/96/427e96639fbc5ab435807de9bd21e66f.jpg" alt="an image of a girl posing with a basketball">
+            <caption>Rita</caption>
+        </section>
+    </main>
+</body>
+</html>
